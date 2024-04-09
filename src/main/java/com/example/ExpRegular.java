@@ -21,6 +21,15 @@ public class ExpRegular {
 
     public static boolean validarCorreo(String correo) {
         String patron = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
+        // ^ inicio de la cadena
+        // [a-zA-Z0-9._%+-] cualquier caracter alfanumerico, punto, guion bajo, porcentaje, mas o menos
+        // + una o mas veces
+        // @ arroba
+        // [a-zA-Z0-9.-] cualquier caracter alfanumerico, punto o guion
+        // + una o mas veces
+        // . punto literal
+        // [a-zA-Z]{2,} cualquier caracter alfanumerico al menos 2 veces
+        // $ fin de la cadena
 
         Pattern pattern = Pattern.compile(patron);
 
